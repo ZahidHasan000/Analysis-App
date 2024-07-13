@@ -14,20 +14,20 @@ import path from "path";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
-import User from "./model/User.js";
-import Product from "./model/Product.js";
-import ProductStat from "./model/ProductStat.js";
-import Transaction from "./model/Transaction.js";
-import OverallStat from "./model/OverallStat.js";
-import AffiliateStat from "./model/AffiliateStat.js";
-import {
-  dataUser,
-  dataProduct,
-  dataProductStat,
-  dataTransaction,
-  dataOverallStat,
-  dataAffiliateStat
-} from "./data/index.js";
+// import User from "./model/User.js";
+// import Product from "./model/Product.js";
+// import ProductStat from "./model/ProductStat.js";
+// import Transaction from "./model/Transaction.js";
+// import OverallStat from "./model/OverallStat.js";
+// import AffiliateStat from "./model/AffiliateStat.js";
+// import {
+//   dataUser,
+//   dataProduct,
+//   dataProductStat,
+//   dataTransaction,
+//   dataOverallStat,
+//   dataAffiliateStat
+// } from "./data/index.js";
 
 /* CONFIGURATION */
 dotenv.config();
@@ -86,12 +86,12 @@ mongoose
     );
 
     /* ONLY ADD DATA ONE TIME */
-    AffiliateStat.insertMany(dataAffiliateStat);
-    OverallStat.insertMany(dataOverallStat);
-    Product.insertMany(dataProduct);
-    ProductStat.insertMany(dataProductStat);
-    Transaction.insertMany(dataTransaction);
-    User.insertMany(dataUser);
+    // AffiliateStat.insertMany(dataAffiliateStat);
+    // OverallStat.insertMany(dataOverallStat);
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
+    // Transaction.insertMany(dataTransaction);
+    // User.insertMany(dataUser);
   })
   .catch((error) => console.log(`\n\n${error} did not connect`));
 
